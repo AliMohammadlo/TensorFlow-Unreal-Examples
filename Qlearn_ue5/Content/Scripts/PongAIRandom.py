@@ -1,9 +1,9 @@
 import tensorflow as tf
 import unreal_engine as ue
-from TFPluginAPI import TFPluginAPI
+from mlpluginapi import MLPluginAPI
 from random import randint
 
-class ExampleAPI(TFPluginAPI):
+class ExampleAPI(MLPluginAPI):
 
 	#expected optional api: setup your model for training
 	def onSetup(self):

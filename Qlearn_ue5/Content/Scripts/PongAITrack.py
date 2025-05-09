@@ -1,9 +1,9 @@
 import tensorflow as tf
 import unreal_engine as ue
-from TFPluginAPI import TFPluginAPI
+from mlpluginapi import MLPluginAPI
 from random import randint
 
-class ExampleAPI(TFPluginAPI):
+class ExampleAPI(MLPluginAPI):
 
 	#expected optional api: setup your model for training
 	def onSetup(self):
@@ -51,6 +51,6 @@ class ExampleAPI(TFPluginAPI):
     
 #NOTE: this is a module function, not a class function. Change your CLASSNAME to reflect your class
 #required function to get our api
-def getApi():
+def get_api():
 	#return CLASSNAME.getInstance()
-	return ExampleAPI.getInstance()
+	return ExampleAPI.get_instance()
