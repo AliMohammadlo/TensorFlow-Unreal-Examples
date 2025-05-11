@@ -286,7 +286,7 @@ class ExampleAPI(MLPluginAPI):
 			action = 2
 		else:
 			action = 1
-          
+          #ue.log(action)
 
 		#layer our input using deque ~200 frames so we can train with temporal data 
 
@@ -363,8 +363,8 @@ class ExampleAPI(MLPluginAPI):
 		action = randint(0,2)
 
 		#debug
-		#print(jsonInput)
-		#print(action)
+		#ue.log(jsonInput)
+		ue.log(action)
 
 		#just do a random action
 		return {'action':action}
